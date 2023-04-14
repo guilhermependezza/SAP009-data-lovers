@@ -1,0 +1,72 @@
+body {
+  padding: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 1.4em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+
+.nav-list {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.nav-item {
+  font-size: 2em;
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.filter-header {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.filter-container {
+  margin-bottom: 2em;
+  border: 1px dotted black;
+}
+
+.filter-label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character-card {
+  margin-bottom: 0.5em;
+}
+
+.character-card p {
+  line-height: 1.3em;
+}
+
+
+/* Media Query for screens smaller than 576 pixels */
+@media (max-width: 575px) {}
+
+/* Media Query for screens between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Media Query for screens between 769px and 992px */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Media Query for screens between 993px and 1200px */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Media Query for larger screens */
+@media (min-width: 1200px) {}
