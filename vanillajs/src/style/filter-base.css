@@ -1,0 +1,14 @@
+.filter-header {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.filter-container {
+  margin-bottom: 2em;
+  border: 1px dotted black;
+}
+
+.filter-label {
+  font-size: 1.2em;
+  font-weight: bold;
+}

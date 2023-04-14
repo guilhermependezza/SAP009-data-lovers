@@ -1,0 +1,14 @@
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  margin-bottom: 0.5em;
+}
+
+.card-info {
+  line-height: 1.3em;
+}
