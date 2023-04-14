@@ -1,9 +1,26 @@
-// estas funciones son de ejemplo
+import ghibli from "../data/ghibli/ghibli.js"
 
-export const example = () => {
-  return 'example';
-};
+export function initBaseComputedData() {
+  const storedCharacters = localStorage.getItem('characters')
+  if (!storedCharacters) {
+    storeCharacters()
+  }
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+  try {
+    JSON.parse(storedCharacters);
+  } catch {
+    storeCharacters()
+  }
+}
+
+export function getCharacters() {
+  return JSON.parse(localStorage.getItem('characters'))
+}
+
+function storeCharacters() {
+  const characters = ghibli.films
+    .map(film => film.people)
+    .flat(1)
+  localStorage.setItem('characters', JSON.stringify(characters));
+}
+
