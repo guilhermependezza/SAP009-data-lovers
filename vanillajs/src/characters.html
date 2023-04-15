@@ -26,36 +26,19 @@
       <div class="filter-container">
         <header class="filter-header">Filters</header>
         <label class="filter-label" for="gender-select">Gender:</label>
-        <select id="gender-select" class="filter-select" name="gender">
-          <option>Select</option>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
+        <select id="gender-select" class="filter-select" data-filter-key="gender" name="gender"></select>
 
-        <label class="filter-label" for="specie-select">Species:</label>
-        <select id="specie-select" class="filter-select" name="specie">
-          <option>Select</option>
-          <option value="Human">Human</option>
-          <option value="Robot">Robot</option>
-        </select>
+        <label class="filter-label" for="species-select">Species:</label>
+        <select id="species-select" class="filter-select" data-filter-key="specie" name="species"></select>
 
         <label class="filter-label" for="hair-select">Hair color:</label>
-        <select id="hair-select" class="filter-select" name="specie">
-          <option>Select</option>
-          <option value="Black">Black</option>
-          <option value="Brown">Brown</option>
-          <option value="Peach">Peach</option>
-        </select>
+        <select id="hair-select" class="filter-select" data-filter-key="hair_color" name="hair"></select>
 
         <label class="filter-label" for="eye-select">Eye color:</label>
-        <select id="eye-select" class="filter-select" name="specie">
-          <option>Select</option>
-          <option value="Black">Black</option>
-          <option value="Dark Brown">Dark Brown</option>
-        </select>
+        <select id="eye-select" class="filter-select" data-filter-key="eye_color" name="eye"></select>
 
-        <button>Filter</button>
-        <button>Clear filters</button>
+        <button class="filter">Filter</button>
+        <button class="filter-clear">Clear filters</button>
       </div>
     </header>
 
