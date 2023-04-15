@@ -1,3 +1,7 @@
+export function getListTemplate(list, templateFunc) {
+  return list.map(templateFunc).join('');
+}
+
 export function getCharacterCardTemplate(character) {
   return `
     <article class="card data-id="${character.id}">
@@ -18,4 +22,8 @@ export function getCharacterCardTemplate(character) {
       </figure>
     </article>
     `;
+}
+
+export function getSelectOptionsTemplate(option) {
+  return `<option value="${option}">${option}</option>`;
 }
